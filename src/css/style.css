@@ -45,6 +45,25 @@ body {
     padding-right: 10px;
 }
 
+/** ZONE **/
+.table-zone-entries {
+    border: none;
+    width: 100%;
+}
+
+.table-zone-entries .mdl-textfield {
+    width: 100%;
+    /*padding: 0;*/
+}
+
+.table-zone-entries .mdl-textfield__label {
+    /*top: 4px;*/
+}
+
+.table-zone-entries tr {
+    max-height: 48px;
+}
+
 /** FAB **/
 .fab-bottom-right {
     position: fixed;

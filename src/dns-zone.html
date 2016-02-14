@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../bower_components/material-design-lite/material.min.css">
+    <script src="../bower_components/material-design-lite/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <span class="mdl-layout-title">Domain - example.org</span>
+            <div class="mdl-layout-spacer"></div>
+            <nav class="mdl-navigation mdl-layout--large-screen-only">
+                <!--<a class="mdl-navigation__link" href="">Link</a>-->
+            </nav>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">
+            <img src="img/dark-it_logo.svg" alt="logo" class="navi-logo"/>
+        </span>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="index.html">Home</a>
+            <a class="mdl-navigation__link" href="domain.html">Domains</a>
+            <a class="mdl-navigation__link" href="email.html">E-Mail</a>
+            <a class="mdl-navigation__link" href="dns.html">DNS</a>
+        </nav>
+    </div>
+    <main class="mdl-layout__content">
+
+        <div class="page-content">
+
+            <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--12-col">
+                    <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable table-zone-entries">
+                        <thead>
+                        <tr>
+                            <th class="mdl-data-table__cell--non-numeric">Name</th>
+                            <th>TTL</th>
+                            <th class="mdl-data-table__cell--non-numeric">Type</th>
+                            <th>Priority</th>
+                            <th class="mdl-data-table__cell--non-numeric">Value</th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="mdl-data-table__cell--non-numeric">
+                                <div class="mdl-textfield mdl-js-textfield">
+                                    <input class="mdl-textfield__input" type="text" id="input-1-name">
+                                    <label class="mdl-textfield__label" for="input-1-name">Name</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="mdl-textfield mdl-js-textfield">
+                                    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?"
+                                           id="input-1-ttl">
+                                    <label class="mdl-textfield__label" for="input-1-ttl">TTL</label>
+                                    <span class="mdl-textfield__error">Input is not a number!</span>
+                                </div>
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric">
+                                <select>
+                                    <option>A</option>
+                                    <option>AAAA</option>
+                                    <option>SRV</option>
+                                    <option>NS</option>
+                                </select>
+                            </td>
+                            <td>
+                                <div class="mdl-textfield mdl-js-textfield">
+                                    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?"
+                                           id="input-1-prio">
+                                    <label class="mdl-textfield__label" for="input-1-prio">Priority</label>
+                                    <span class="mdl-textfield__error">Input is not a number!</span>
+                                </div>
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric">
+                                <div class="mdl-textfield mdl-js-textfield">
+                                    <input class="mdl-textfield__input" type="text" id="input-1-value">
+                                    <label class="mdl-textfield__label" for="input-1-value">Value</label>
+                                </div>
+                            </td>
+
+                            <td>
+                                <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect">
+                                    <i class="material-icons">delete</i>
+                                </button>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="mdl-data-table__cell--non-numeric">
+                                <div class="mdl-textfield mdl-js-textfield">
+                                    <input class="mdl-textfield__input" type="text" id="input-2-name">
+                                    <label class="mdl-textfield__label" for="input-2-name">Name</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="mdl-textfield mdl-js-textfield">
+                                    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?"
+                                           id="input-2-ttl">
+                                    <label class="mdl-textfield__label" for="input-2-ttl">TTL</label>
+                                    <span class="mdl-textfield__error">Input is not a number!</span>
+                                </div>
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric">
+                                <select>
+                                    <option>A</option>
+                                    <option>AAAA</option>
+                                    <option>SRV</option>
+                                    <option>TXT</option>
+                                    <option>NS</option>
+                                </select>
+                            </td>
+                            <td>
+                                <div class="mdl-textfield mdl-js-textfield">
+                                    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?"
+                                           id="input-2-prio">
+                                    <label class="mdl-textfield__label" for="input-2-prio">Priority</label>
+                                    <span class="mdl-textfield__error">Input is not a number!</span>
+                                </div>
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric">
+                                <div class="mdl-textfield mdl-js-textfield">
+                                    <input class="mdl-textfield__input" type="text" id="input-2-value">
+                                    <label class="mdl-textfield__label" for="input-2-value">Value</label>
+                                </div>
+                            </td>
+
+                            <td>
+                                <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect">
+                                    <i class="material-icons">delete</i>
+                                </button>
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+</div>
+
+</body>
+</html>
