@@ -1,0 +1,13 @@
+{
+  "name": "Webpanel",
+  "version": "0.0.1",
+  "author": "Steven Tappert <admin@dark-it.net>",
+  "devDependencies": {
+    "gulp-cssnano": "^2.1.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.2"
+  },
+  "dependencies": {
+    "bower": "^1.7.7"
+  }
+}

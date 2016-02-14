@@ -1,0 +1,46 @@
+body {
+    /*background: #fefefe;*/
+}
+
+.mdl-cell {
+    padding: 1em 1.6em;
+}
+
+.table-email-list {
+    border: none;
+    width: 100%;
+    background: transparent;
+}
+
+.navi-logo {
+    width: 160px;
+}
+
+.mdl-layout__drawer .mdl-layout-title {
+    line-height: 44px;
+    margin-top: 20px;
+}
+
+/** DNS **/
+.card-dns-domain.mdl-card {
+    /*background: rgba(63, 81, 181, 1);*/
+    min-height: 64px;
+}
+
+.card-dns-domain > .mdl-card__title {
+    align-items: flex-start;
+}
+
+.card-dns-domain > .mdl-card__title > h4 {
+    margin-top: 0;
+}
+
+.card-dns-domain > .mdl-card__actions {
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.card-dns-domain > .mdl-card__actions > .material-icons {
+    padding-right: 10px;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../bower_components/material-design-lite/material.min.css">
+    <script src="../bower_components/material-design-lite/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <span class="mdl-layout-title">Domains</span>
+            <div class="mdl-layout-spacer"></div>
+            <nav class="mdl-navigation mdl-layout--large-screen-only">
+                <!--<a class="mdl-navigation__link" href="">Link</a>-->
+            </nav>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">
+            <img src="img/dark-it_logo.svg" alt="logo" class="navi-logo"/>
+        </span>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="index.html">Home</a>
+            <a class="mdl-navigation__link" href="domain.html">Domains</a>
+            <a class="mdl-navigation__link" href="email.html">E-Mail</a>
+            <a class="mdl-navigation__link" href="dns.html">DNS</a>
+        </nav>
+    </div>
+    <main class="mdl-layout__content">
+
+        <div class="page-content">
+
+            <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--12-col">
+                    <form action="#">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="password" id="create-domain-name">
+                            <label class="mdl-textfield__label" for="create-domain-name">Domain</label>
+                        </div>
+
+                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect" type="submit">
+                            Add
+                        </button>
+                    </form>
+                </div>
+
+                <div class="mdl-cell mdl-cell--12-col">
+                    <table class="mdl-data-table mdl-js-data-table table-email-list">
+                        <thead>
+                        <tr>
+                            <th class="mdl-data-table__cell--non-numeric">Name</th>
+                            <th class="mdl-data-table__cell--non-numeric">DNS</th>
+                            <th class="mdl-data-table__cell--non-numeric">Mail</th>
+                            <th class="mdl-data-table__cell--non-numeric">Web</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="mdl-data-table__cell--non-numeric">test.de</td>
+                            <td>
+                                <span class="mdl-list__item-secondary-action">
+                                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="cb-1-dns">
+                                      <input type="checkbox" id="cb-1-dns" class="mdl-checkbox__input" checked/>
+                                  </label>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="mdl-list__item-secondary-action">
+                                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="cb-1-mail">
+                                      <input type="checkbox" id="cb-1-mail" class="mdl-checkbox__input" checked/>
+                                  </label>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="mdl-list__item-secondary-action">
+                                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="cb-1-web">
+                                      <input type="checkbox" id="cb-1-web" class="mdl-checkbox__input" checked/>
+                                  </label>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="mdl-data-table__cell--non-numeric">example.org</td>
+                            <td>
+                                <span class="mdl-list__item-secondary-action">
+                                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="cb-2-dns">
+                                      <input type="checkbox" id="cb-2-dns" class="mdl-checkbox__input"/>
+                                  </label>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="mdl-list__item-secondary-action">
+                                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="cb-2-mail">
+                                      <input type="checkbox" id="cb-2-mail" class="mdl-checkbox__input" checked/>
+                                  </label>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="mdl-list__item-secondary-action">
+                                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="cb-2-web">
+                                      <input type="checkbox" id="cb-2-web" class="mdl-checkbox__input"/>
+                                  </label>
+                                </span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+</div>
+
+</body>
+</html>
