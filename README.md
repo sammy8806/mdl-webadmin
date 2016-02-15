@@ -7,6 +7,6 @@ npm install && bower install
 ```
 
 # Screenshots
-![https://raw.githubusercontent.com/sammy8806/mdl-webadmin/master/doc/domains.png](Domain Overview)
-![https://raw.githubusercontent.com/sammy8806/mdl-webadmin/master/doc/email.png](E-Mail Account Overview)
-![https://raw.githubusercontent.com/sammy8806/mdl-webadmin/master/doc/dns.png](Zone Overview)
+![Domain Overview](https://raw.githubusercontent.com/sammy8806/mdl-webadmin/master/doc/domains.png)
+![E-Mail Account Overview](https://raw.githubusercontent.com/sammy8806/mdl-webadmin/master/doc/email.png)
+![Zone Overview](https://raw.githubusercontent.com/sammy8806/mdl-webadmin/master/doc/dns.png)
